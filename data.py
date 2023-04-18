@@ -3,16 +3,16 @@ headers = {
 }
 
 
-  = {
-    "firstName": "Анна",
-    "lastName": "Белкина",
-    "address": "Деревянная, 142",
-    "metroStation": 204,
-    "phone": "+99999999999",
+order_body = {
+    "firstName": "Vika",
+    "lastName": "Vika",
+    "address": "Ulitsa 2",
+    "metroStation": 4,
+    "phone": "+77777777777",
     "rentTime": 5,
-    "deliveryDate": "2023-0-05",
-    "comment": "Привезите, пожалуйста",
+    "deliveryDate": "2020-06-06",
+    "comment": "Пожалуйста, привезите самокат",
     "color": [
-        "GRAY"
+        "BLACK"
     ]
- }
+}
