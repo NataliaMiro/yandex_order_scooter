@@ -2,6 +2,7 @@
 # CREATE_ORDER_PATH = "/api/v1/orders"
 # ORDER_TRACK_PATH = "/api/v1/orders/track"
 
-URL = 'https://ea1dbb2c-89e6-49eb-ac8c-c4c8e5fa828e.serverhub.praktikum-services.ru'
+URL = 'https://e5350fdc-0900-4348-89f4-de535ff5c058.serverhub.praktikum-services.ru'
 CREATE_ORDER = '/api/v1/orders'
 GET_ORDER = '/api/v1/orders/track'
+CANCEL_ORDER_PATH = '/api/v1/orders/cancel'

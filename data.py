@@ -10,7 +10,7 @@ order_body = {
     "metroStation": 4,
     "phone": "+77777777777",
     "rentTime": 5,
-    "deliveryDate": "2020-06-06",
+    "deliveryDate": "2023-05-05",
     "comment": "Пожалуйста, привезите самокат",
     "color": [
         "BLACK"

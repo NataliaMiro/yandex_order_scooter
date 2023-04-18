@@ -5,6 +5,8 @@ import sender_stend_request
 def positive_assert_200(track):
     response = sender_stend_request.get_order_by_track(track)
     assert response.status_code == 200
+    print(sender_stend_request.track)
+
 
 # Функция для негативной проверки (несуществующий трек)
 def negative_assert_404(track):
@@ -21,6 +23,7 @@ def no_parametr_track_negative_assert_400(track):
 # Тест 1. Запрос с существующим трекером
 def test_get_order_success_response():
     positive_assert_200(sender_stend_request.track)
+    print(sender_stend_request.track)
 
 # Тест 2. Ошибка. Запрос с несуществующим трекером
 def test_get_order_error_response():
