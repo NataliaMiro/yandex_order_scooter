@@ -43,24 +43,24 @@ def test_get_order_success_response():
     print(sender_stend_request.track)
 
 
-# Тест 1. Запрос с существующим трекером короткая карта
+# Тест 2. Запрос с существующим трекером короткая карта
 def test_get_order_success_response_for_short():
     positive_short_card_assert_200(sender_stend_request.track_with_short)
     print(sender_stend_request.track_with_short)
 
 
 
-# Тест 1. Запрос с существующим трекером полная карта
+# Тест 3. Запрос с существующим трекером полная карта
 def test_get_order_success_response_for_full():
     positive_full_card_assert_200(sender_stend_request.track_with_full)
     print(sender_stend_request.track_with_full)
 
 
 
-# Тест 2. Ошибка. Запрос с несуществующим трекером
+# Тест 4. Ошибка. Запрос с несуществующим трекером
 def test_get_order_error_response():
     negative_assert_404(111111)
 
-# Тест 3. Ошибка. Запрос без трекера
+# Тест 5. Ошибка. Запрос без трекера
 def test_get_order_with_empty_track_error_response():
     no_parametr_track_negative_assert_400('')
