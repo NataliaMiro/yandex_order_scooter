@@ -2,6 +2,7 @@ import configuration
 import data
 import requests
 
+
 # Функция для создания нового заказа
 def create_new_order(body):
     return requests.post(configuration.URL + configuration.CREATE_ORDER,
@@ -15,7 +16,6 @@ track = response.json()['track']
 print(track)
 
 
-
 # Функция для создания нового заказа и сохранения треек-номера для короткой карты
 def create_new_order_with_short_card(body):
     return requests.post(configuration.URL + configuration.CREATE_ORDER,
@@ -27,7 +27,6 @@ print(response.json())
 # Функция для сохранения трек-номера
 track_with_short = response.json()['track']
 print(track_with_short)
-
 
 
 # Функция для создания нового заказа и сохранения треек-номера для полной карты
