@@ -8,6 +8,23 @@ def positive_assert_200(track):
     print(sender_stend_request.track)
 
 
+
+# Функция для позитивной проверки короткой карточки
+def positive_short_card_assert_200(track_with_short):
+    response = sender_stend_request.get_order_with_short_by_track(track_with_short)
+    assert response.status_code == 200
+    print(sender_stend_request.track_with_short)
+
+
+
+# Функция для позитивной проверки полной карточки
+def positive_full_card_assert_200(track_with_full):
+    response = sender_stend_request.get_order_with_full_by_track(track_with_full)
+    assert response.status_code == 200
+    print(sender_stend_request.track_with_full)
+
+
+
 # Функция для негативной проверки (несуществующий трек)
 def negative_assert_404(track):
     response = sender_stend_request.get_order_by_track(track)
@@ -24,6 +41,21 @@ def no_parametr_track_negative_assert_400(track):
 def test_get_order_success_response():
     positive_assert_200(sender_stend_request.track)
     print(sender_stend_request.track)
+
+
+# Тест 1. Запрос с существующим трекером короткая карта
+def test_get_order_success_response_for_short():
+    positive_short_card_assert_200(sender_stend_request.track_with_short)
+    print(sender_stend_request.track_with_short)
+
+
+
+# Тест 1. Запрос с существующим трекером полная карта
+def test_get_order_success_response_for_full():
+    positive_full_card_assert_200(sender_stend_request.track_with_full)
+    print(sender_stend_request.track_with_full)
+
+
 
 # Тест 2. Ошибка. Запрос с несуществующим трекером
 def test_get_order_error_response():
