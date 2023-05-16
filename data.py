@@ -17,3 +17,14 @@ order_body = {
     ]
 }
 
+courier_login_body = {
+    "login": "simiona",
+    "password": "4455"
+}
+
+
+courier_body = {
+    "login": "simiona",
+    "password": "4455",
+    "firstName": "saske"
+}

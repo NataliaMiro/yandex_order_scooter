@@ -27,5 +27,18 @@ print(response.json())
 
 
 
+def get_orders_courier_id(courier_id):
+    return requests.get(configuration.URL + configuration.GET_ORDER,
+                        params={'coirierId' : courier_id})
 
 
+# Функция для создания курьера
+def create_courier(courier_body):
+    return requests.post(configuration.URL + configuration.GET_COURIER,
+                         json=courier_body)
+
+
+# Функция для передачи логина курьера
+def post_courier_login(courier_login):
+    return requests.post(configuration.URL + configuration.GET_COURIER_LOGIN,
+                         json=courier_login)
